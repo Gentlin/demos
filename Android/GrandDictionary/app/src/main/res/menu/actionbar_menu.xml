@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/actionbar_menu">
+    <item
+        android:id="@+id/search"
+        android:icon="@drawable/ic_action_search"
+        android:title="search"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/add"
+        android:icon="@android:drawable/ic_input_add"
+        android:title="add"
+        app:showAsAction="always" />
+    <item
+        android:title="下载单词"
+        android:id="@+id/download"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/show_mean"
+        android:checkable="true"
+        android:checked="false"
+        android:title="显示词义"
+        app:showAsAction="never" />
+
+</menu>

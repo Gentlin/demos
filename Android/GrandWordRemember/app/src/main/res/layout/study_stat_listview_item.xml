@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/word"
+            android:text="单词"
+           android:gravity="left"
+            android:layout_height="wrap_content"
+            android:layout_width="150dp" />
+        <TextView
+            android:text="级别"
+            android:gravity="left"
+
+            android:layout_height="wrap_content"
+            android:layout_width="80dp"
+            android:id="@+id/level"/>
+        <TextView
+            android:text="测试"
+            android:gravity="left"
+
+            android:layout_height="wrap_content"
+            android:layout_width="80dp"
+            android:id="@+id/test"/>
+        <TextView
+            android:gravity="left"
+            android:id="@+id/correct"
+            android:text="正确"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"/>
+
+</LinearLayout>

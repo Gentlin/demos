@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="2dp"
+    android:paddingVertical="2dp">
+    <TableRow>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="单词"
+            android:textSize="20dp"
+            android:id="@+id/wordtext"/>
+
+        <EditText
+            android:id="@+id/new_word"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangle"
+            android:hint="请填写单词"
+            android:textSize="20dp"
+            />
+
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/wordtext"
+            android:text="解释"
+            android:id="@+id/explanation_text"/>
+
+        <EditText
+            android:id="@+id/explanation"
+            android:background="@drawable/rectangle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请填写解释"
+            android:inputType="textMultiLine"
+            android:minLines="4"
+            android:textSize="20dp" />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="级别"
+            />
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:background="@drawable/rectangle"
+            android:hint="请填写难度"
+            android:id="@+id/level"
+            />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="是否覆盖"
+            />
+        <CheckBox
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:id="@+id/override"
+            android:checked="false"
+            />
+    </TableRow>
+</TableLayout>

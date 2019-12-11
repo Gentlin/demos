@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Register</string>
+    <string-array name="colleges">
+        <item>计算学院</item>
+        <item>材料学院</item>
+        <item>外语学院</item>
+        <item>管理学院</item>
+        <item>工学院</item>
+        <item>化工学院</item>
+        <item>电工学院</item>
+    </string-array>
+</resources>

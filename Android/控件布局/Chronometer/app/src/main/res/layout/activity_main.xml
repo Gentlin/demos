@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <Chronometer
+        android:id="@+id/startTime"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="40dp"
+        android:textSize="30sp"
+        android:format="00:00"
+        android:textColor="@color/colorGray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Chronometer
+        android:id="@+id/elapse"
+        android:textColor="@color/colorRed"
+        android:layout_width="wrap_content"
+        android:format="00:00"
+        android:layout_toRightOf="@id/startTime"
+        android:layout_alignBottom="@id/startTime"
+        android:layout_marginLeft="70dp"
+        android:textSize="30sp"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/start"
+        android:text="启动"
+        android:layout_below="@id/startTime"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/pause"
+        android:text="暂停"
+        android:layout_below="@id/startTime"
+        android:layout_alignBottom="@id/start"
+        android:layout_toRightOf="@id/start"
+        android:layout_marginLeft="20dp"
+        android:layout_alignTop="@id/start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/reset"
+        android:text="重制"
+        android:layout_toRightOf="@id/pause"
+        android:layout_alignTop="@id/start"
+        android:layout_alignBottom="@id/start"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
